@@ -69,12 +69,16 @@ export default function Home() {
   
   
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" 
+    // style={bg}
+    >
       <div className="px-4" style={{ maxWidth: '1600px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border shadow rounded-xl overflow-hidden bg-black">
+              <div key={i} className="border shadow rounded-xl overflow-hidden bg-black
+              // white-glassmorphism1
+              ">
                 <div style={{height:"300px"}}><img src={nft.image} /></div>
                 <div className="p-4">
                   <p style={{ height: '64px' }} className="text-white text-2xl font-semibold">{nft.name}</p>
@@ -95,3 +99,15 @@ export default function Home() {
     </div>
   )
 }
+// const intBg =
+//   "https://res.cloudinary.com/fitness-glory/image/upload/v1633216239/young-woman-drinking-water-gym-exercise-concept_1_gtwi3b.jpg";
+// const bgImgA = {
+//   background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url(${intBg})`,
+//   backgroundSize: "cover",
+//   position: "center",
+//   marginTop: "-20px",
+//   right: "0%",
+//   left: "0%",
+//   width: "100%",
+//   height: "100%",
+// };

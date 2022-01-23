@@ -1,11 +1,11 @@
 import '../styles/globals.css'
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
-import logo from '../public/logo.png';
+// import logo from '../public/logo.png';
 import React from 'react';
 import Link from 'next/link'
 import Footer from '../components/Footer';
-
+import Image from 'next/image'
 
 const NavBarItem = ({ title, classprops }) => (
     <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
@@ -19,7 +19,7 @@ const NavBarItem = ({ title, classprops }) => (
       <div>
         <nav className="w-full flex md:justify-center justify-between items-center p-4" style={{background:"black"}}>
             <div className="md:flex-[0.5] flex-initial justify-center items-center">
-                <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="w-32 cursor-pointer" />
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {[
