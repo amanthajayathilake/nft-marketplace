@@ -9,7 +9,7 @@ import {
   nftmarketaddress
 } from '../config'
 import styles from '../styles/Home.module.css'
-
+import { SiEthereum } from "react-icons/si";
 
 
 export default function Home() {
@@ -74,17 +74,18 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border shadow rounded-xl overflow-hidden">
-                <img src={nft.image} />
+              <div key={i} className="border shadow rounded-xl overflow-hidden bg-black">
+                <div style={{height:"300px"}}><img src={nft.image} /></div>
                 <div className="p-4">
-                  <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
+                  <p style={{ height: '64px' }} className="text-white text-2xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
                     <p className="text-gray-400">{nft.description}</p>
                   </div>
                 </div>
                 <div className="p-4 bg-black">
-                  <p className="text-2xl mb-4 font-bold text-white">{nft.price} ETH</p>
-                  <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
+                  <p className="text-2xl mb-4 font-bold text-white">ETH {nft.price}</p>
+                  {/* <SiEthereum fontSize={21} color="#fff" style={{marginTop:"-27px", marginLeft:"130px"}}/> */}
+                  <button className="w-full bg-yellow-500 text-white font-bold py-2 px-12 rounded-xl" onClick={() => buyNft(nft)}>Buy NFT</button>
                 </div>
               </div>
             ))
