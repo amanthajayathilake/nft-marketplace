@@ -16,7 +16,7 @@ const Footer = () => (
     </div>
 
     <div className="flex justify-center items-center flex-col mt-5">
-      <p className="text-white text-sm text-center">You can send ethereum through this site.</p>
+      <p className="text-white text-sm text-center">You can buy and sell nfts using this site</p>
       <p className="text-white text-sm text-center font-medium mt-2">amanthajayathilake@gmail.com</p>
     </div>
 

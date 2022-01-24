@@ -91,25 +91,28 @@ export default function Home() {
   
   return (
     <div>
-      <h1 style={{color: "white", fontSize: "60px", fontWeight: 700}}>
+      <br/>
+      <h1 style={{color: "white", fontSize: "60px", fontWeight: 700, marginLeft:"20px"}}>
           NFT Marketplace
-          </h1><br/>
-          <p style={{color: "white", fontWeight: 300}} >
+          </h1>
+          <hr style={{ width:"90%", marginLeft:"20px"}}/>
+          <br/>
+          <p style={{color: "white", fontWeight: 300, marginLeft:"20px", width:"90%"}} >
             Explore the crypto world. Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet. Buy and sell cryptocurrencies easily on Crypto Web 3.0. You need to install Metamask to transfer Ethereum.
-          </p>
+          </p><br/>
           {/* <div>
             <MetaMaskLoginButton />
           </div> */}
           <div className="flex-1 flex flex-row justify-start items-center">
             <ServiceCard
               color="bg-[#F84550]"
-              title="Fastest transactions"
+              title="Fast Transactions"
               icon={<RiHeart2Fill fontSize={21} className="text-white" />}
               subtitle="Your personal data is encrypted and all transactions are 100% secured"
             />
             <ServiceCard
               color="bg-[#2952E3]"
-              title="Safe and secure"
+              title="Safe & secure"
               icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
               subtitle="Your personal data is encrypted and all transactions are 100% secured"
             />
