@@ -81,19 +81,19 @@ export default function CreateItem() {
         <h1 style={{ color:"white",fontSize:"50px",fontWeight:"700"}}>Create NFT Asset</h1>
         <hr />
         <input 
-          placeholder="Asset Name"
+          placeholder="Enter Asset Name"
           className="mt-8 border rounded p-4"
           style={{background:"black",color:"white"}}
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
         <textarea
-          placeholder="Asset Description"
+          placeholder="Enter Asset Description"
           className="mt-2 border rounded p-4"
           style={{background:"black",color:"white"}}
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
         <input
-          placeholder="Asset Price in Eth"
+          placeholder="Enter Asset Price in Eth"
           className="mt-2 border rounded p-4"
           style={{background:"black",color:"white"}}
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}

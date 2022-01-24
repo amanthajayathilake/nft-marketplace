@@ -8,10 +8,10 @@ const Footer = () => (
         <img src={logo} alt="logo" className="w-32" />
       </div> */}
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Market</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Exchange</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">About</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Wallets</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">Home</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">Create Assets</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">My Assets</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">Dashboard</p>
       </div>
     </div>
 

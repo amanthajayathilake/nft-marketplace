@@ -98,7 +98,9 @@ export default function Home() {
           <hr style={{ width:"90%", marginLeft:"20px"}}/>
           <br/>
           <p style={{color: "white", fontWeight: 300, marginLeft:"20px", width:"90%"}} >
-            Explore the crypto world. Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet. Buy and sell cryptocurrencies easily on Crypto Web 3.0. You need to install Metamask to transfer Ethereum.
+          Crypto Web3.0 is the world’s first and largest marketplace where you can buy and sell NFTs. It’s compatible with the Ethereum, Polygon, and Klaytn blockchains. You can browse through more than 34 million NFTs on this platform sorted into dozens of categories, ranging from digital art to collectibles, game items, virtual worlds, and domain names.
+
+        To sign up on Crypto Web3.0, you need an Ethereum wallet like MetaMask and pay a signup fee to initialize your account. Many NFT platforms take gas fees upfront. A gas fee is the cost of validating transactions on a blockchain network.
           </p><br/>
           {/* <div>
             <MetaMaskLoginButton />
@@ -124,9 +126,7 @@ export default function Home() {
             />
           </div>
 
-    <div className="flex justify-center" 
-    // style={bg}
-    >
+    <div className="flex justify-center">
        <div className="px-4" style={{ maxWidth: '1600px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
@@ -134,7 +134,7 @@ export default function Home() {
               <div key={i} className="border shadow rounded-xl overflow-hidden bg-[#3A3B3C]
               // white-glassmorphism1
               ">
-                <div style={{height:"200px"}}><img src={nft.image} /></div>
+                <div style={{height:"200px",background: `linear-gradient( rgba(0, 0, 0,1), rgba(0, 0, 0, 0.2))`}}><img src={nft.image} /></div>
                 <div className="p-4">
                   <p style={{ height: '64px', fontWeight:"900" }} className="text-white text-3xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
