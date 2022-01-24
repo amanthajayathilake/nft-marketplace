@@ -19,7 +19,7 @@ const NavBarItem = ({ title, classprops }) => (
       <div>
         <nav className="w-full flex md:justify-center justify-between items-center p-4" style={{background:"black"}}>
             <div className="md:flex-[0.5] flex-initial justify-center items-center">
-            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="w-32 cursor-pointer" />
+            <img src='https://res.cloudinary.com/fitness-glory/image/upload/v1643039067/logo_xqgqex.png' alt="logo" className="w-32 cursor-pointer" />
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {[
@@ -30,17 +30,17 @@ const NavBarItem = ({ title, classprops }) => (
                   </Link>,
                   <Link href="/create-item">
                     <a className="mr-6 text-white-500">
-                      Sell Digital Asset
+                      Create Assets
                     </a>
                   </Link>,
                   <Link href="/my-assets">
                     <a className="mr-6 text-white-500">
-                      My Digital Assets
+                      My Assets
                     </a>
                   </Link>,
                   <Link href="/creator-dashboard">
                     <a className="mr-6 text-white-500">
-                      Creator Dashboard
+                      Dashboard
                     </a>
                   </Link>
                 ].map((item, index) => (
@@ -72,12 +72,12 @@ const NavBarItem = ({ title, classprops }) => (
                    </Link>,
                    <Link href="/create-item">
                      <a className="mr-6 text-white-500">
-                       Sell Digital Asset
+                       Create Asset
                      </a>
                    </Link>,
                    <Link href="/my-assets">
                      <a className="mr-6 text-white-500">
-                       My Digital Assets
+                       My Assets
                      </a>
                    </Link>,
                    <Link href="/creator-dashboard">
