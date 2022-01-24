@@ -10,6 +10,27 @@ import {
 } from '../config'
 import styles from '../styles/Home.module.css'
 import { SiEthereum } from "react-icons/si";
+import React from "react";
+import { BsShieldFillCheck } from "react-icons/bs";
+import { BiSearchAlt } from "react-icons/bi";
+import { RiHeart2Fill } from "react-icons/ri";
+
+
+
+const ServiceCard = ({ color, title, icon, subtitle }) => (
+  <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
+    <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
+      {icon}
+    </div>
+    <div className="ml-5 flex flex-col flex-1">
+      <h3 className="mt-2 text-white text-lg">{title}</h3>
+      <p className="mt-1 text-white text-sm md:w-9/12">
+        {subtitle}
+      </p>
+    </div>
+  </div>
+);
+
 
 
 export default function Home() {
@@ -65,21 +86,65 @@ export default function Home() {
     await transaction.wait()
     loadNFTs()
   }
-  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>)
+  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl" style={{color: "white"}}>No items in marketplace</h1>)
   
   
   return (
+    <div>
+      <h1 
+      // className="cryptoHead" 
+      style={{color: "white", fontSize: "60px", fontWeight: 700}}>
+          NFT Marketplace
+          {/* <span style={{color:"#fe8c00"}}>S</span>
+          <span style={{color:"white"}}>e</span>
+          <span style={{color:"#fe8c00"}}>n</span>
+          <span style={{color:"white"}}>d </span>
+          <span style={{color:"#fe8c00"}}>C</span>
+          <span style={{color:"white"}}>r</span>
+          <span style={{color:"#fe8c00"}}>y</span>
+          <span style={{color:"white"}}>p</span>
+          <span style={{color:"#fe8c00"}}>t</span>
+          <span style={{color:"white"}}>o</span></u> */}
+          {/* <SiEthereum fontSize={21} color="#fff" /> */}
+          </h1><br/>
+          <p style={{color: "white", fontWeight: 300}} >
+            Explore the crypto world. Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet. Buy and sell cryptocurrencies easily on Crypto Web 3.0. You need to install Metamask to transfer Ethereum.
+          </p>
+          {/* <div>
+            <MetaMaskLoginButton />
+          </div> */}
+          <div className="flex-1 flex flex-row justify-start items-center">
+      <ServiceCard
+          color="bg-[#F84550]"
+          title="Fastest transactions"
+          icon={<RiHeart2Fill fontSize={21} className="text-white" />}
+          subtitle="Your personal data is encrypted and all transactions are 100% secured"
+        />
+        <ServiceCard
+          color="bg-[#2952E3]"
+          title="Safe and secure"
+          icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
+          subtitle="Your personal data is encrypted and all transactions are 100% secured"
+        />
+        <ServiceCard
+          color="bg-[#8945F8]"
+          title="24/7 support"
+          icon={<BiSearchAlt fontSize={21} className="text-white" />}
+          subtitle="Your personal data is encrypted and all transactions are 100% secured"
+        />
+      </div>
+
     <div className="flex justify-center" 
     // style={bg}
     >
-      <div className="px-4" style={{ maxWidth: '1600px' }}>
+       <div className="px-4" style={{ maxWidth: '1600px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden bg-black
               // white-glassmorphism1
               ">
-                <div style={{height:"300px"}}><img src={nft.image} /></div>
+                <div style={{height:"200px"}}><img src={nft.image} /></div>
                 <div className="p-4">
                   <p style={{ height: '64px' }} className="text-white text-2xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
@@ -89,13 +154,14 @@ export default function Home() {
                 <div className="p-4 bg-black">
                   <p className="text-2xl mb-4 font-bold text-white">ETH {nft.price}</p>
                   {/* <SiEthereum fontSize={21} color="#fff" style={{marginTop:"-27px", marginLeft:"130px"}}/> */}
-                  <button className="w-full bg-yellow-500 text-white font-bold py-2 px-12 rounded-xl" onClick={() => buyNft(nft)}>Buy NFT</button>
+                  <button className="w-full bg-[red] text-white font-bold py-2 px-12 rounded-xl" onClick={() => buyNft(nft)}>Buy NFT</button>
                 </div>
               </div>
             ))
           }<br/>
         </div>
       </div>
+    </div><br/><br/>
     </div>
   )
 }
