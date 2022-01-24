@@ -101,25 +101,25 @@ export default function Home() {
             <MetaMaskLoginButton />
           </div> */}
           <div className="flex-1 flex flex-row justify-start items-center">
-        <ServiceCard
-          color="bg-[#F84550]"
-          title="Fastest transactions"
-          icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Your personal data is encrypted and all transactions are 100% secured"
-        />
-        <ServiceCard
-          color="bg-[#2952E3]"
-          title="Safe and secure"
-          icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Your personal data is encrypted and all transactions are 100% secured"
-        />
-        <ServiceCard
-          color="bg-[#8945F8]"
-          title="24/7 support"
-          icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Your personal data is encrypted and all transactions are 100% secured"
-        />
-      </div>
+            <ServiceCard
+              color="bg-[#F84550]"
+              title="Fastest transactions"
+              icon={<RiHeart2Fill fontSize={21} className="text-white" />}
+              subtitle="Your personal data is encrypted and all transactions are 100% secured"
+            />
+            <ServiceCard
+              color="bg-[#2952E3]"
+              title="Safe and secure"
+              icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
+              subtitle="Your personal data is encrypted and all transactions are 100% secured"
+            />
+            <ServiceCard
+              color="bg-[#8945F8]"
+              title="24/7 support"
+              icon={<BiSearchAlt fontSize={21} className="text-white" />}
+              subtitle="Your personal data is encrypted and all transactions are 100% secured"
+            />
+          </div>
 
     <div className="flex justify-center" 
     // style={bg}
@@ -133,13 +133,13 @@ export default function Home() {
               ">
                 <div style={{height:"200px"}}><img src={nft.image} /></div>
                 <div className="p-4">
-                  <p style={{ height: '64px' }} className="text-white text-2xl font-semibold">{nft.name}</p>
+                  <p style={{ height: '64px', fontWeight:"900" }} className="text-white text-3xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
                     <p className="text-white " >{nft.description}</p>
                   </div>
                 </div>
                 <div className="p-4 bg-[#3A3B3C]">
-                  <p className="text-2xl mb-4 font-bold text-white">ETH {nft.price}</p>
+                  <p className="text-2xl mb-4 font-bold text-white">ETH - {nft.price}</p><hr/><br/>
                   {/* <SiEthereum fontSize={21} color="#fff" style={{marginTop:"-27px", marginLeft:"130px"}}/> */}
                   <button className="w-full bg-[red] text-white font-bold py-2 px-12 rounded-xl" onClick={() => buyNft(nft)}>Buy NFT</button>
                 </div>
