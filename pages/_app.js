@@ -28,16 +28,16 @@ const NavBarItem = ({ title, classprops }) => (
                       Home
                     </a>
                   </Link>,
-                  <Link href="/create-item">
-                    <a className="mr-6 text-white-500">
-                      Create Assets
-                    </a>
-                  </Link>,
-                  <Link href="/my-assets">
+                 <Link href="/my-assets">
                     <a className="mr-6 text-white-500">
                       My Assets
                     </a>
                   </Link>,
+                  <Link href="/create-item">
+                  <a className="mr-6 text-white-500">
+                    Create Assets
+                  </a>
+                </Link>,
                   <Link href="/creator-dashboard">
                     <a className="mr-6 text-white-500">
                       Dashboard
