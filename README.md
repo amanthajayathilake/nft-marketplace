@@ -4,12 +4,8 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 
 Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+First Enter your secret in .secret file. Then,
+
+1) npm run dev
+2) npx hardhat run scripts/deploy.js --network localhost
+3) npx hardhat node
