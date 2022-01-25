@@ -110,19 +110,19 @@ export default function Home() {
               color="bg-[#F84550]"
               title="Fast Transactions"
               icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-              subtitle="Your personal data is encrypted"
+              subtitle="Your personal data is encrypted and all transactions are 100% secured"
             />
             <ServiceCard
               color="bg-[#2952E3]"
               title="Safe & secure"
               icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-              subtitle="Your personal data is encrypted"
+              subtitle="Your personal data is encrypted and all transactions are 100% secured"
             />
             <ServiceCard
               color="bg-[#8945F8]"
               title="24/7 support"
               icon={<BiSearchAlt fontSize={21} className="text-white" />}
-              subtitle="Your personal data is encrypted"
+              subtitle="Your personal data is encrypted and all transactions are 100% secured"
             />
           </div>
           <br/><br/>

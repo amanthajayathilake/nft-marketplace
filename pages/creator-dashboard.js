@@ -54,7 +54,9 @@ export default function CreatorDashboard() {
   return (
     <div>
       <div className="p-4">
-        <h2 className="text-2xl py-2" style={{color: "white"}}>Items Created</h2>
+        <h2 className="text-2xl py-2" style={{color: "white"}}>Assets Created</h2>
+        <hr style={{ width:"90%"}}/>
+        <br/>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
             nfts.map((nft, i) => (
@@ -68,11 +70,14 @@ export default function CreatorDashboard() {
           }
         </div>
       </div>
+      <br/><br/>
         <div className="px-4">
         {
           Boolean(sold.length) && (
             <div>
-              <h2 className="text-2xl py-2" style={{color: "white"}}>Items sold</h2>
+              <h2 className="text-2xl py-2" style={{color: "white"}}>Assets sold</h2>
+              <hr style={{ width:"90%"}}/>
+              <br/>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
                 {
                   sold.map((nft, i) => (
@@ -88,6 +93,7 @@ export default function CreatorDashboard() {
             </div>
           )
         }
+        <br/><br/>
         </div>
     </div>
   )

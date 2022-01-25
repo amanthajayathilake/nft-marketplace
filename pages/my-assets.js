@@ -47,7 +47,12 @@ export default function MyAssets() {
   }
   if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl" style={{color:"white"}}>No assets owned</h1>)
   return (
+    <div>
+    <br/>  
+    <h1 style={{color: "white", fontSize: "40px", fontWeight: 500, marginLeft:"20px"}}>Assets Owned</h1>
+    <hr style={{ width:"90%", marginLeft:"20px"}}/>
     <div className="flex justify-center">
+      
       <div className="p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
@@ -61,7 +66,10 @@ export default function MyAssets() {
             ))
           }
         </div>
+        <br/><br/>
       </div>
+      
+    </div>
     </div>
   )
 }
