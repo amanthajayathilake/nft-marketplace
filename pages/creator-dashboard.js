@@ -55,7 +55,7 @@ export default function CreatorDashboard() {
     <div>
       <div className="p-4">
         <h2 className="text-2xl py-2" style={{color: "white"}}>Assets Created</h2>
-        <hr style={{ width:"90%"}}/>
+        <hr style={{ width:"100%"}}/>
         <br/>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
@@ -76,7 +76,7 @@ export default function CreatorDashboard() {
           Boolean(sold.length) && (
             <div>
               <h2 className="text-2xl py-2" style={{color: "white"}}>Assets sold</h2>
-              <hr style={{ width:"90%"}}/>
+              <hr style={{ width:"100%"}}/>
               <br/>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
                 {
