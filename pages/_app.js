@@ -19,26 +19,30 @@ const NavBarItem = ({ title, classprops }) => (
       <div>
         <nav className="w-full flex md:justify-center justify-between items-center p-4" style={{background:"black"}}>
             <div className="md:flex-[0.5] flex-initial justify-center items-center">
-            <img src='https://res.cloudinary.com/fitness-glory/image/upload/v1643039067/logo_xqgqex.png' alt="logo" className="w-32 cursor-pointer" />
+            {/* <img src='https://res.cloudinary.com/fitness-glory/image/upload/v1643039067/logo_xqgqex.png' alt="logo" className="w-32 cursor-pointer" /> */}
+            <Image
+              src='https://res.cloudinary.com/fitness-glory/image/upload/v1643039067/logo_xqgqex.png' 
+              alt="logo" className="w-32 cursor-pointer"
+            />
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {[
-                  <Link href="/">
+                  <Link href="/" key={1}>
                     <a className="mr-4 text-white-500">
                       Home
                     </a>
                   </Link>,
-                  <Link href="/create-item">
+                  <Link href="/create-item" key={2}>
                     <a className="mr-6 text-white-500">
                       Create Assets
                     </a>
                   </Link>,
-                  <Link href="/my-assets">
+                  <Link href="/my-assets" key={3}>
                     <a className="mr-6 text-white-500">
                       My Assets
                     </a>
                   </Link>,
-                  <Link href="/creator-dashboard">
+                  <Link href="/creator-dashboard" key={4}>
                     <a className="mr-6 text-white-500">
                       Dashboard
                     </a>
@@ -65,22 +69,22 @@ const NavBarItem = ({ title, classprops }) => (
                     {/* blue-glassmorphism color */}
                 <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
                 {[
-                   <Link href="/">
+                   <Link href="/" key={1}>
                      <a className="mr-4 text-white-500">
                        Home
                      </a>
                    </Link>,
-                   <Link href="/create-item">
+                   <Link href="/create-item" key={2}>
                      <a className="mr-6 text-white-500">
                        Create Asset
                      </a>
                    </Link>,
-                   <Link href="/my-assets">
+                   <Link href="/my-assets" key={3}>
                      <a className="mr-6 text-white-500">
                        My Assets
                      </a>
                    </Link>,
-                   <Link href="/creator-dashboard">
+                   <Link href="/creator-dashboard" key={4}>
                      <a className="mr-6 text-white-500">
                        Creator Dashboard
                      </a>
