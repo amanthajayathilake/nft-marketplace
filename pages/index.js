@@ -144,7 +144,7 @@ export default function Home() {
                 <div className="p-4 bg-[#3A3B3C]">
                   <p className="text-2xl mb-4 font-bold text-white">ETH - {nft.price}</p><hr/><br/>
                   {/* <SiEthereum fontSize={21} color="#fff" style={{marginTop:"-27px", marginLeft:"130px"}}/> */}
-                  <button className="w-full bg-[red] text-white font-bold py-2 px-12 rounded-xl" onClick={() => buyNft(nft)}>Buy NFT</button>
+                  <button className="w-full bg-[#fe8c00] text-white font-bold py-2 px-12 rounded-xl" onClick={() => buyNft(nft)}>Buy NFT</button>
                 </div>
               </div>
             ))
