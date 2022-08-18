@@ -9,6 +9,7 @@ import {
 } from '../config'
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
 import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
+import Image from 'next/image'
 
 
 
@@ -107,7 +108,7 @@ export default function CreateItem() {
         />
         {
           fileUrl && (
-            <img className="rounded mt-4" width="350" src={fileUrl} />
+            <Image alt="image" className="rounded mt-4" width="350" src={fileUrl} />
           )
         }
         <button onClick={createMarket} className="font-bold m-4 bg-[#fe8c00] text-white rounded p-4 shadow-lg" >

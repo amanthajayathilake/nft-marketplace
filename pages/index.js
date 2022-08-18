@@ -14,8 +14,7 @@ import React from "react";
 import { BsShieldFillCheck } from "react-icons/bs";
 import { BiSearchAlt } from "react-icons/bi";
 import { RiHeart2Fill } from "react-icons/ri";
-
-
+import Image from 'next/image'
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
   <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
@@ -138,7 +137,7 @@ export default function Home() {
               <div key={i} className="border shadow rounded-xl overflow-hidden bg-[#3A3B3C]
               // white-glassmorphism1
               ">
-                <div style={{height:"200px",background: `linear-gradient( rgba(0, 0, 0,1), rgba(0, 0, 0, 0.2))`}}><img src={nft.image} /></div>
+                <div style={{height:"200px",background: `linear-gradient( rgba(0, 0, 0,1), rgba(0, 0, 0, 0.2))`}}><Image src={nft.image} alt="image"/></div>
                 <div className="p-4">
                   <p style={{ height: '64px', fontWeight:"900" }} className="text-white text-3xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
@@ -159,15 +158,3 @@ export default function Home() {
     </div>
   )
 }
-// const intBg =
-//   "https://res.cloudinary.com/fitness-glory/image/upload/v1633216239/young-woman-drinking-water-gym-exercise-concept_1_gtwi3b.jpg";
-// const bgImgA = {
-//   background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url(${intBg})`,
-//   backgroundSize: "cover",
-//   position: "center",
-//   marginTop: "-20px",
-//   right: "0%",
-//   left: "0%",
-//   width: "100%",
-//   height: "100%",
-// };
