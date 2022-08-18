@@ -1,6 +1,6 @@
 {
-  "name": "nft-marketplace",
-  "private": true,
+  "name": "nft-marketplace",y
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
